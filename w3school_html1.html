@@ -1,0 +1,459 @@
+<!doctype html>
+<html lang="en-US">
+<head>
+
+<!-- 
+  This changes the style of the whole document.
+<style>
+Body {background-color: powderblue;}
+h1 {color:blue;}
+p {color:red}
+</style> 
+-->
+
+<!--
+  You should learn CSS and create those sheets, then link to the page.
+   <link rel="stylesheet" href="styles.css">
+  Same with Java...
+   <script src="myscript.js">
+  You also need to learn about how to organize files for a website (ahem...pictures!!!!) and how to actually get the site to a domain. May have to purchase. I believe Weebly allows for you to input html code but I'm not sure.
+-->
+
+<style>
+#myHeader {
+  background-color: lightblue;
+  color: black;
+  padding: 40px;
+  text-align: center;
+} 
+table, th, td {
+  border: 1px solid black;
+  Border-collapse: collapse;
+}
+th, td {
+  padding: 15px;
+}
+td {
+  text-align: center;
+}
+a:link {
+  color:green; 
+  background-color:transparent; 
+  text-decoration:none;
+} 
+a:visited {
+  color:pink; 
+  background-color:transparent; 
+  text-decoration:none;
+} 
+a:hover {
+  color:red;
+  background-color:transparent;
+  text-decoration:underline;
+}
+a:active {
+  color:yellow; 
+  background-color:transparent; 
+  text-decoration:underline;
+}
+</style>
+<title>HTML test page (shows up on tabs)</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+</head>
+
+<body style="background-color:lightgray;">
+
+<h1 style="text-align:center;">This is a Heading</h1>
+<h2>This is a second Heading</h2>
+<h3>This is a third Heading, and you can go all the way up to 6.</h3>
+<h2 style="font-size:60px;">This heading's size was adjusted in code.</h2>
+
+<p style="text-align:right;">This is a paragraph.</p>
+<p style="text-align:right;">This is another paragraph, and white space in-between from the browser.</p>
+<a href="https://www.youtube.com" target="_blank" title="Open in New tab">Click Here!</a>
+<a href="https://www.youtube.com" target="_self" title="Open in this tab">Click Here!</a>
+<hr>
+<p><b>I have created a line to separate the page. Also this text is bold.</b></p>
+<hr><br/><br/>
+<img src="IMG_1893.jpeg" alt="image" width="104" height="142">
+<p><strong>I need help adding html images. Also, this text is strong.</strong></p>
+<button>This button does nothing!</button>
+<button onclick="window.location.href = 'https://www.youtube.com/';">Youtube!</button>
+
+<a href="#Colors">Jump to Colors</a>
+<a href="#form">Fill out this wacky form</a>
+
+<ul style="list-style-type:disc;">
+<li>Bullet 1</li>
+ <ul style="list-style-type:square;">
+  <li>Bullet A</li>
+  <li>Bullet B</li>
+ </ul>
+<li>Bullet 2</li>
+<li>Bullet 3</li>
+</ul>
+
+<ol>
+<li>Number 1</li>
+ <ol type="I">
+  <li>Numeral I</li>
+  <li>Numeral II</li>
+   <ol type="a">
+    <li>Letter a</li>
+    <li>Letter b</li>
+    <li>Letter c</li>
+   </ol>
+  <li>Numeral III</li>
+ </ol>
+<li>Number 2</li>
+<li>Number 3</li>
+</ol>
+
+<ol start="50">
+<li>Number 50</li>
+<li>Number 51</li>
+<li>Number 52</li>
+</ol>
+
+<dl>
+ <dt>Coffee</dt>
+ <dd>- black hot drink</dd>
+ <dt>Milk</dt>
+ <dd>- white cold drink</dd>
+</dl>
+
+
+
+<a href="https://www.google.com/"> <style>
+a:link, a:visited {
+  background-color: #f44336;
+  color: white;
+  padding: 15px 25px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+}
+
+a:hover, a:active {
+  background-color: red;
+}
+</style>
+Click this dude!</a>
+
+<p>Here is a paragraph <br/> that has a <br/> line break <i>or two.</i></p>
+
+<br/><br/><br/>
+<p>image take 2...</p>
+<img src="img_girl.jpg" width="500" height="600">
+<p><em>still</em> doesn't work :(</p>
+
+<p style="color:red">This is a <mark>red</mark> paragraph.</p>
+<p style="color:darkorange">This is a <del>red</del> orange paragraph.</p>
+<p style="color:green">This is a green paragraph.</p>
+<p style="color:blue">This is a blue paragraph.</p>
+<p style="color:purple">This is a <small>purple</small> paragraph.</p>
+<p style="color:gray">This is a gray paragraph.</p>
+<p style="color:magenta">This is a magenta paragraph.</p>
+<p style="color:pink">This is a pink paragraph.</p>
+<p style="color:white">This is a white paragraph.</p>
+<p style="color:powderblue">This is a powder blue paragraph.</p>
+
+<p title="Hello World!" style="font-size:160%;">
+If you mouse over <ins>this</ins> paragraph, you will see "Hello World!"
+</p>
+
+<p title='this title has "quotes" so the coding uses a single quote'>
+this title has "quotes" so the coding uses a single quote</p>
+
+<p title="this title has 'single quotes' so the coding uses double quotes">
+this title has 'single quotes' so the coding uses double quotes</p>
+
+<pre style="font-family:arial;">
+This text should
+
+format the way
+
+I want it to
+And here it is.
+</pre>
+
+<p>This is <sub>subscripted</sub> text.</p>
+<p>This is <sup>superscripted</sup> text.</p>
+
+<p>This is a short quote with the quotations added by the browser: <q>Hey wassup mah homies?!</q></p>
+
+<p>Here is a long quote indented by the browser:</p>
+<blockquote cite="http://www.youtube.com">
+Watch more videos, waste more time! That's always the best idea. We have the greatest ideas. We are Youtube, and we are the best.
+</blockquote>
+
+<p>The <abbr title="World Health Organization">WHO</abbr> was founded in 1948. Abbreviations just help the browser and search-engines, as well as translators.</p>
+
+<address>
+Written by John Hagan.<br>
+Visit us at:<br>
+Google.com<br>
+101 Claytie South<br>
+Nashville, TN<br>
+37221
+</address>
+<p>This was italicized by the browser.</p>
+
+<p><cite>The Scream</cite> by Edvard Munch. Painted in 1893. That is the title of the painting.</p>
+
+<p><bdo dir="rtl">Apparently you can make text write from right to left??</bdo></p>
+
+<!-- 
+  This is a comment that is not displayed, but it can help the person who is coding the html for organization or reminders, or for troubleshooting because you can hide lines of code but still keep them in the document. 
+-->
+
+<p>There is a comment above this in the html code, but it is not shown on the page.</p>
+
+<h2 id="Colors">Colors</h2>
+<h1 style="background-color:tomato;">This heading has a background color. You can do that with paragraphs too.</h1>
+<h1 style="color:DodgerBlue;"> Or you can just color the text.</h1>
+<h1 style="border:2px solid Violet;">This has a border of whatever thickness and color I want.</h1>
+
+<p>The following are all the same color, but named differently in the coding.</p>
+<p style="background-color:rgb(255, 99, 71);">rgb(255, 99, 71)</p>
+<p style="background-color:#ff6347;">#ff6347</p>
+<p style="background-color:hsl(9, 100%, 64%);">hsl(9, 100%, 64%)</p>
+<p>And these are transparent by 50%, used by inputting an alpha number between 0.0 and 1.0.</p>
+<p style="background-color:rgb(255, 99, 71, 0.5);">rgb(255, 99, 71, 0.5)</p>
+<p style="background-color:hsl(9, 100%, 64%, 0.5);">hsl(9, 100%, 64%, 0.5)</p>
+
+<p style="border: 1px solid black; padding: 30px; margin: 50px;">This has a border with extra space (padding) around it. It also has a margin around it.</p>
+
+<p>Also for future reference, above shows how to format multiple style attributes in one element.</p>
+
+<a href="default.asp"> <img src="smiley.gif" alt="HTML tutorial" style="width:42px;height:42px;border:0;"> </a>
+
+<p>Pictures take 3 haha</p>
+<img src="https://www.w3schools.com/images/w3schools_green.jpg" alt=""W3Schools.com" style="max-width:100%;height:auto;">
+<p>FINALLY</p>
+
+<p><img src="https://www.w3schools.com/images/w3schools_green.jpg" alt=""W3Schools.com" style="float:right;width:42px;height:42px;" onclick="window.location.href = 'https://www.youtube.com/';">The image will float to the right of the text, and you can click the image to go to youtube as well.</p>
+
+<table style="width:100%">
+ <caption><b>Information</b></caption>
+ <tr>
+	<th>Firstname</th>
+	<th>Lastname</th>
+	<th>Age</th>
+ </tr>
+ <tr>
+	<td>Jill</td>
+	<td>Smith</td>
+	<td>50</td>
+ </tr>
+ <tr>
+	<td>Eve</td>
+	<td>Jackson</td>
+	<td>94</td>
+ </tr>
+</table>
+
+<div style="background-color:black;color:white;padding:20px;">
+	<h2>Heading</h2>
+	<p>	This is a paragraph with a box around it. Pretty cool, huh?</p>
+	<p>	And here is paragraph 2. Here's some random text now. London is the capital city of England. It is the most populous city in the United Kingdom, with a metropolitan area of over 13 million inhabitants.</p>
+</div>
+
+<h1>This <span style="color:red">Heading</span> Has Color On One Word!</h1>
+
+<h1 id="myHeader">My Header from id style!</h1>
+
+<iframe src="https://www.google.com" height="200" width="300" style="border:border;"></iframe>
+
+
+<a href="https://www.w3schools.com/html/html_layout.asp" target="_blank">Helpful Link for Formatting Layout</a>
+
+<h1 style="font-size:10vw">Scaled Text</h1>
+
+<a href="https://www.w3schools.com/html/html_responsive.asp" target="_blank">Helpful Link for Responsive Web Design Templates &#128525;</a>
+
+<form action="" id="form" autocomplete="on">
+ <fieldset>
+  <legend>Personal Info:</legend>
+  <label for="fname">First Name:</label><br>
+  <input type="text" id="fname" name="fname" value="n/a" disabled><br>
+  <label for="lname">Last Name:</label><br>
+  <input type="text" id="lname" name="lname"><br>
+  <input type="radio" id="male" name="gender" value="male">
+  <label for="male">Male</label><br>
+  <input type="radio" id="female" name="gender" value="female">
+  <label for="female">Female</label><br>
+  <input type="radio" id="robot" name="gender" value="robot">
+  <label for="robot">Robot</label><br>
+  <label for="birthday">Birthday:</label><br/>
+  <input type="date" id="birthday" name="birthday"><br/>
+  <label for="email">Enter your email:</label><br/>
+  <input type="email" id="email" name="email"><br/>
+  <label for="bdaymonth">Birthday (month and year):</label><br/>
+  <input type="month" id="bdaymonth" name="bdaymonth"><br/>
+  <label for="quantity">What's your favorite number (between 1 and 3):</label>
+  <input type="number" id="quantity" name="quantity" min="1" max="3" value="2">
+  <label for="phone">Enter your phone number:</label>
+  <input type="tel" id="phone" name="phone" pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}" placeholder="123-456-7890">
+ </fieldset>
+ <fieldset>
+  <legend>DO YOU LIKE CARS?</legend>
+  <select id="cars" name="cars">
+   <option value="none" selected>-none-</option>
+   <option value="volvo">Volvo</option>
+   <option value="saab">Saab</option>
+   <option value="fiat">Fiat</option>
+   <option value="audi">Audi</option>
+  </select>
+ </fieldset>
+ <fieldset>
+  <legend title="Hold down the Ctrl (windows) / Command (Mac) button to select multiple options.">DO YOU LIKE FOOD?</legend>
+  <select id="food" name="food" title="Hold down the Ctrl (windows) / Command (Mac) button to select multiple options." multiple>
+   <option value="italian" title="Hold down the Ctrl (windows) / Command (Mac) button to select multiple options.">Italian</option>
+   <option value="mexican" title="Hold down the Ctrl (windows) / Command (Mac) button to select multiple options.">Mexican</option>
+   <option value="american" title="Hold down the Ctrl (windows) / Command (Mac) button to select multiple options.">American</option>
+   <option value="asian" title="Hold down the Ctrl (windows) / Command (Mac) button to select multiple options.">Asian</option>
+  </select>
+ </fieldset>
+ <textarea name="copy" rows="10" cols="30" value="Copy this text exactly as shown in the field below." readonly>Copy this text exactly as shown in the field below.</textarea><br/>
+ <textarea name="message" rows="10" cols="30">
+ </textarea><br/>
+ <input list="browsers">
+ <datalist id="browsers">
+  <option value="Internet Explorer">
+  <option value="Firefox">
+  <option value="Chrome">
+  <option value="Opera">
+  <option value="Safari">
+ </datalist>
+ <fieldset>
+  <legend>USER IDENTIFICATION</legend>
+   <label for="username">Username:</label><br>
+   <input type="text" id="username" name="username" required><br>
+   <label for="pwd">Password:</label><br>
+   <input type="password" id="pwd" name="pwd" required>
+ </fieldset>
+ <fieldset>
+  <legend>Check all that apply</legend>
+  <input type="checkbox" id="vehicle1" name="vehicle1" value="Bike">
+  <label for="vehicle1">I have a bike</label><br>
+  <input type="checkbox" id="vehicle2" name="vehicle2" value="Car">
+  <label for="vehicle2">I have a car</label><br>
+  <input type="checkbox" id="vehicle3" name="vehicle3" value="Boat">
+  <label for="vehicle3">I have a boat</label><br>
+ </fieldset>
+ <fieldset>
+  <label for="favcolor">Select your favorite color:</label>
+  <input type="color" id="favcolor" name="favcolor">
+ </fieldset>
+ <fieldset>
+  <legend>Upload a file!</legend>
+  <label for="my file">Select a file or two:</label>
+  <input type="file" id="myfile" name="myfile" multiple>
+  <p>To select multiple files, hold down the CTRL or SHIFT key while selecting.</p>
+ </fieldset>
+ <fieldset>
+  <label for="vol">Volume (between 0 and 50):</label><br/>
+  <input type="range" id="vol" name="vol" min="0" max="50">
+ </fieldset>
+ <fieldset>
+  <label for="gsearch">Search Google:</label>
+  <input type="search" id="gsearch" name="gsearch">
+ </fieldset>
+ <fieldset>
+  <label for="appt">Select a time for your appointment:</label>
+  <input type="time" id="appt" name="appt">
+  <label for="week">Select a week:</label>
+  <input type="week" id="week" name="week">
+ </fieldset>
+ <fieldset>
+  <label for="homepage">Add your homepage:</label><br/>
+  <input type="url" id="homepage" name="homepage">
+ </fieldset>
+
+
+
+ <input type="reset">
+ <input type="image" src="img_submit.gif" alt="Submit" width="48" height="48"> 
+
+ <input type="submit" value="Heck Yeah Let's Submit!">
+</form>
+<p>Hold down the Ctrl (windows) / Command (Mac) button to select multiple options.</p>
+
+<button type="button" onclick="alert('MAC ALERT')">Click for a surprise...</button>
+
+<a href="https://www.w3schools.com/html/html5_svg.asp" target="_blank">To learn more about graphics, click here!</a>
+
+<hr>
+<video width="320" height="240" controls autoplay>
+ <source src="" type="video/mp4">
+Your browser does not support the video tag, and this text is only shown if that is the case.
+</video>
+
+<audio controls>
+ <source src="" type="audio/mpeg">
+Your browser does not support the audio element :(
+</audio>
+
+<iframe src="https://www.youtube.com/embed/tgbNymZ7vqY" height="200" width="300" style="border:border;">
+</iframe>
+
+
+<p>this next part is kinda scary ngl. Very eye-opening.</p>
+<button onclick="getLocation()">Try It</button>
+
+<p id="demo"></p>
+
+<script>
+var x = document.getElementById("demo");
+function getLocation() {
+  if (navigator.geolocation) {
+    navigator.geolocation.getCurrentPosition(showPosition);
+  } else {
+    x.innerHTML = "Geolocation is not supported by this browser.";
+  }
+}
+
+function showPosition(position) {
+  x.innerHTML = "Latitude: " + position.coords.latitude + 
+  "<br>Longitude: " + position.coords.longitude; 
+}
+function showPosition(position) {
+  var latlon = position.coords.latitude + "," + position.coords.longitude;
+
+  var img_url = "https://maps.googleapis.com/maps/api/staticmap?center=
+  "+latlon+"&zoom=14&size=400x300&sensor=false&key=YOUR_KEY";
+
+  document.getElementById("mapholder").innerHTML = "<img src='"+img_url+"'>";
+}
+</script>
+
+<p>but apparently it doesn't work unless this is on a domain...</p>
+
+<hr>
+
+
+<script>
+function allowDrop(ev) {
+  ev.preventDefault();
+}
+
+function drag(ev) {
+  ev.dataTransfer.setData("text", ev.target.id);
+}
+
+function drop(ev) {
+  ev.preventDefault();
+  var data = ev.dataTransfer.getData("text");
+  ev.target.appendChild(document.getElementById(data));
+}
+</script>
+
+<div id="div1" ondrop="drop(event)" ondragover="allowDrop(event)"></div>
+
+<img id="drag1" src="img_logo.gif" draggable="true" ondragstart="drag(event)" width="336" height="69">
+
+
+</body>
+</html>
